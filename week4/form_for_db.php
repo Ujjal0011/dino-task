@@ -1,0 +1,52 @@
+<?php include 'db_connection.php';?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insert DB</title>
+</head>
+<body>
+    <h2>Insert DB</h2>
+    <form action="insert_db.php" method="POST">
+        Name: <input type="text" name="name">
+        <br><br>
+
+        E-mail: <input type="text" name="email">
+        <br><br>
+        
+        Website: <input type="text" name="website">
+        <br><br>
+        
+        Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+        <br><br>
+        
+        Gender:
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="other">Other
+        <br><br>
+
+        <h1>Favorite Programming Language:</h1>
+        <input type="checkbox" name="prog_lan[]" value="C"> C
+        <input type="checkbox" name="prog_lan[]" value="C++"> C++
+        <input type="checkbox" name="prog_lan[]" value="Java"> Java
+        <input type="checkbox" name="prog_lan[]" value="Scala"> Scala
+        <input type="checkbox" name="prog_lan[]" value="Rust"> Rust
+        <br><br>
+
+        <h2>Laptop:</h2>
+        <select name="laptop">
+            <option value="hp">Hp</option>
+            <option value="lenovo">lenovo</option>
+            <option value="dell">Dell</option>
+            <option value="asus">Asus</option>
+        </select>
+        <br><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
