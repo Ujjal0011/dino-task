@@ -62,6 +62,7 @@ $name = $email = $gender = $comment = $website = $prog_lan_str = $laptop = "";
         } else {
             echo "0 results";
         }
+    mysqli_close($conn);
     ?>
 </table>
 
